@@ -50,11 +50,11 @@
     };
 
     const gitment = new Gitment({
-      owner: "{{ theme.owner }}",
-      repo: "{{ theme.repo }}",
+      owner: "{{ theme.github_owner }}",
+      repo: "{{ theme.github_repo }}",
       oauth: {
-        client_id: "{{ theme.client_id }}",
-        client_secret: "{{ theme.client_secret }}"
+        client_id: "{{ theme.github_client_id }}",
+        client_secret: "{{ theme.github_client_secret }}"
       },
       theme: myTheme
     });

@@ -33,8 +33,8 @@
       <div class="subtitle">️{{ theme.subtitle }}</div>
 
       <div class="about">
-        <a href="https://github.com/DaiZhongyi" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/dzhongyi/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+        <a href="https://github.com/{{ theme.github_owner }}" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/{{ theme.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
       </div>
 
       <div class="navigation">
@@ -47,8 +47,7 @@
 
   <footer class="footer">
     {% block footer %}
-      <p>Copyright © 2016-2017 | <a href="/">{{ theme.title }}</a>
-        |<span id="busuanzi_container_site_pv"  style='display:none'>您是本站第 <span id="busuanzi_value_site_pv"></span> 位访问者</span></p>
+      <p>Copyright © 2016-2017 | <a href="/">{{ theme.title }}</a> | Powered by <a href="https://github.com/DaiZhongyi/hexo-theme-keke.git">keke</a> </p>
     {% endblock %}
   </footer>
 
