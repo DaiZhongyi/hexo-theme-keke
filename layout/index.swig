@@ -18,8 +18,12 @@
         {% endif %}
       </div>
 
-      <div class="post-date">
-        <time datetime="{{ post.date.toJSON() }}">{{ date(post.date) }}</time>
+      <div class="post-meta">
+        <span class="post-block"><i class="fa fa-calendar"></i><span class="post-date">{{ date(post.date) }}</span></span>
+        {#<span class="post-block"><i class="fa fa-user"></i><span class="post-author">{{ config.author }}</span></span>#}
+        {% for category in post.categories %}
+          <span class="post-block"><i class="fa fa-tag"></i><span class="post-category"><a href="{{ category.path }}">{{ category.name }}</a></span></span>
+        {% endfor %}
       </div>
 
     </section>

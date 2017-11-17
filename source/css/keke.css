@@ -130,19 +130,20 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.content .post .post-meta .post-block {
+.post-meta {
+    padding-top: 0.5em;
+}
+
+.post-meta .post-block {
     padding-right: 0.5em;
 }
 
-.content .post .post-meta .post-block .post-date,
-.content .post .post-meta .post-block .post-author,
-.content .post .post-meta .post-block .post-pv {
+.post-meta .post-block .post-date,
+.post-meta .post-block .post-author,
+.post-meta .post-block .post-pv,
+.post-meta .post-block .post-category {
     color: grey;
     padding-left: 0.5em;
-}
-
-.content .post .post-meta .post-category {
-
 }
 
 .content .post .post-content {

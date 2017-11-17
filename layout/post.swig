@@ -14,11 +14,8 @@
       <span class="post-block"><i class="fa fa-calendar"></i><span class="post-date">{{ date(page.date) }}</span></span>
       <span class="post-block"><i class="fa fa-user"></i><span class="post-author">{{ config.author }}</span></span>
       <span id="busuanzi_container_page_pv" class="post-block">
-        <i class="fa fa-users"></i><span id="busuanzi_value_page_pv" class="post-pv"></span>
+        <i class="fa fa-eye"></i><span id="busuanzi_value_page_pv" class="post-pv"></span>
       </span>
-      {#{% for category in page.categories %}#}
-      {#<span class="post-category">{{ category }}</span>#}
-      {#{% endfor %}#}
     </div>
 
     <div class="post-content">
