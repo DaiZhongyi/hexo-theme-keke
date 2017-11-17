@@ -14,7 +14,7 @@
         {% if post.summary %}
           {{ post.summary }}
         {% else %}
-          {{ strip_html(truncate(post.content, {length: theme.truncate, omission: "......"})) }}
+          {{ strip_html(truncate(post.content, {length: config.truncate, omission: "......"})) }}
         {% endif %}
       </div>
 

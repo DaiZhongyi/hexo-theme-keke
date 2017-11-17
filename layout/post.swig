@@ -12,7 +12,7 @@
     <div class="post-title">{{ page.title }}</div>
     <div class="post-meta">
       <span class="post-block"><i class="fa fa-calendar"></i><span class="post-date">{{ date(page.date) }}</span></span>
-      <span class="post-block"><i class="fa fa-user"></i><span class="post-author">{{ theme.author }}</span></span>
+      <span class="post-block"><i class="fa fa-user"></i><span class="post-author">{{ config.author }}</span></span>
       <span id="busuanzi_container_page_pv" class="post-block">
         <i class="fa fa-users"></i><span id="busuanzi_value_page_pv" class="post-pv"></span>
       </span>
@@ -38,7 +38,7 @@
     const myTheme = {
       render(state, instance) {
         const container = document.createElement('div');
-        container.lang = "{{ theme.language }}";
+        container.lang = "{{ config.language }}";
         container.className = 'gitment-container gitment-root-container';
 
 //        container.appendChild(instance.renderHeader(state, instance));
@@ -50,11 +50,11 @@
     };
 
     const gitment = new Gitment({
-      owner: "{{ theme.github_owner }}",
-      repo: "{{ theme.github_repo }}",
+      owner: "{{ config.github_owner }}",
+      repo: "{{ config.github_repo }}",
       oauth: {
-        client_id: "{{ theme.github_client_id }}",
-        client_secret: "{{ theme.github_client_secret }}"
+        client_id: "{{ config.github_client_id }}",
+        client_secret: "{{ config.github_client_secret }}"
       },
       theme: myTheme
     });

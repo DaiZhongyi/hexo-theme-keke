@@ -10,7 +10,7 @@
   {# page personal css #}
   {% block css %}{% endblock %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme.google_analytics_id }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google_analytics_id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -20,7 +20,7 @@
 
     gtag('js', new Date());
 
-    gtag('config', "{{ theme.google_analytics_id }}");
+    gtag('config', "{{ config.google_analytics_id }}");
   </script>
 </head>
 <body>
@@ -29,12 +29,12 @@
 
   {% block header %}
     <header class="header">
-      <div class="title"><a href="/">{{ theme.title }}</a></div>
-      <div class="subtitle">️{{ theme.subtitle }}</div>
+      <div class="title"><a href="/">{{ config.title }}</a></div>
+      <div class="subtitle">️{{ config.subtitle }}</div>
 
       <div class="about">
-        <a href="https://github.com/{{ theme.github_owner }}" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/{{ theme.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+        <a href="https://github.com/{{ config.github_owner }}" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/{{ config.linkedin }}" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
       </div>
 
       <div class="navigation">
@@ -47,7 +47,7 @@
 
   <footer class="footer">
     {% block footer %}
-      <p>Copyright © 2016-2017 | <a href="/">{{ theme.title }}</a> | Powered by <a href="https://github.com/DaiZhongyi/hexo-theme-keke.git">keke</a> </p>
+      <p>Copyright © 2016-2017 | <a href="/">{{ config.title }}</a> | Powered by <a href="https://github.com/DaiZhongyi/hexo-theme-keke.git">keke</a> </p>
     {% endblock %}
   </footer>
 
