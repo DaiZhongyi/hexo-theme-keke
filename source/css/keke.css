@@ -12,16 +12,16 @@ a:hover {
 }
 
 /*pre {*/
-    /*height: auto;*/
-    /*max-height: 200px;*/
-    /*background-color: #eeeeee;*/
-    /*word-break: normal !important;*/
-    /*word-wrap: normal !important;*/
-    /*white-space: pre !important;*/
+/*height: auto;*/
+/*max-height: 200px;*/
+/*background-color: #eeeeee;*/
+/*word-break: normal !important;*/
+/*word-wrap: normal !important;*/
+/*white-space: pre !important;*/
 /*}*/
 
 @media (min-width: 970px) {
-    .container{
+    .container {
         max-width: 50%;
     }
 }
@@ -84,7 +84,7 @@ a:hover {
 }
 
 .content {
-    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
     color: #3e3e3e;
 }
 
@@ -196,85 +196,92 @@ a:hover {
     font-size: 14px;
 }
 
-/*
-base:    #fafafa
-mono-1:  #383a42
-mono-2:  #686b77
-mono-3:  #a0a1a7
-hue-1:   #0184bb
-hue-2:   #4078f2
-hue-3:   #a626a4
-hue-4:   #50a14f
-hue-5:   #e45649
-hue-5-2: #c91243
-hue-6:   #986801
-hue-6-2: #c18401
-*/
-
 .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    color: #383a42;
-    background: #f6f8fa;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #333;
+    background: #fdfdf7;
+    border-radius: 3px;
+    border: 1px solid #e7e7d6;
 }
 
 .hljs-comment,
 .hljs-quote {
-    color: #a0a1a7;
+    color: #998;
     font-style: italic;
 }
 
-.hljs-doctag,
 .hljs-keyword,
-.hljs-formula {
-    color: #d73a49;
-}
-
-.hljs-section,
-.hljs-name,
 .hljs-selector-tag,
-.hljs-deletion,
 .hljs-subst {
-    color: #d73a49;
+    color: #333;
+    font-weight: bold;
 }
 
-.hljs-literal {
-    color: #0184bb;
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: #008080;
 }
 
 .hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-    color: #50a14f;
+.hljs-doctag {
+    color: #da322f;
 }
 
-.hljs-built_in,
-.hljs-class .hljs-title {
-    color: #6f42c1;
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+    color: #900;
+    font-weight: bold;
 }
 
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
+.hljs-subst {
+    font-weight: normal;
+}
+
 .hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-    color: #986801;
+.hljs-class .hljs-title {
+    color: #2f8ad2;
+    font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+    color: #000080;
+    font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+    color: #859a00;
 }
 
 .hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-    color: #6f42c1;
+.hljs-bullet {
+    color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+    color: #2f8ad2;
+}
+
+.hljs-meta {
+    color: #93a1a1;
+    font-weight: bold;
+}
+
+.hljs-deletion {
+    background: #fdd;
+}
+
+.hljs-addition {
+    background: #dfd;
 }
 
 .hljs-emphasis {
@@ -283,8 +290,4 @@ hue-6-2: #c18401
 
 .hljs-strong {
     font-weight: bold;
-}
-
-.hljs-link {
-    text-decoration: underline;
 }
