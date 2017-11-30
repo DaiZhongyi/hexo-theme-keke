@@ -11,15 +11,6 @@ a:hover {
     color: dodgerblue;
 }
 
-/*pre {*/
-/*height: auto;*/
-/*max-height: 200px;*/
-/*background-color: #eeeeee;*/
-/*word-break: normal !important;*/
-/*word-wrap: normal !important;*/
-/*white-space: pre !important;*/
-/*}*/
-
 @media (min-width: 970px) {
     .container {
         max-width: 50%;
@@ -151,30 +142,30 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.content .post h1,
-.content .post h2,
-.content .post h3 {
+.content h1,
+.content h2,
+.content h3 {
     font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     color: #3e3e3e;
 }
 
-.content .post h1 {
+.content h1 {
     font-size: 1.3em;
 }
 
-.content .post h2 {
-    font-size: 1.3em;
+.content h2 {
+    font-size: 1.2em;
 }
 
-.content .post h3 {
-    font-size: 1.3em;
+.content h3 {
+    font-size: 1.1em;
 }
 
-.content .post h4,
-.content .post h5,
-.content .post h6 {
+.content h4,
+.content h5,
+.content h6 {
     font-size: 1em;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -187,6 +178,27 @@ a:hover {
 .content .post ol,
 .content .post ul {
     padding-left: 1em;
+}
+
+.content .talking {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.content .talking-header {
+
+}
+
+.content .talking-content {
+
+}
+
+.content .talking-footer {
+    text-align: right;
+    color: grey;
+    font-size: 0.9em;
 }
 
 .footer {
