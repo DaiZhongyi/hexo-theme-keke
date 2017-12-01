@@ -1,20 +1,51 @@
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 50%;
+    }
+}
+
 body {
     background-color: #f0eff5;
 }
 
 a {
     text-decoration: none;
-    color: #3e3e3e;
+    color: #0366d6;
 }
 
-a:hover {
-    color: dodgerblue;
+p {
+    margin: 0;
+    padding: 0.5em 0;
 }
 
-@media (min-width: 970px) {
-    .container {
-        max-width: 50%;
-    }
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    position: relative;
+    border-left: 5px solid #ddd;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -25,6 +56,10 @@ a:hover {
 }
 
 .header {
+}
+
+.header a {
+    color: #3e3e3e;
 }
 
 .header .title {
@@ -38,21 +73,24 @@ a:hover {
     font-size: 0.9em;
     font-style: italic;
     margin: 0;
-    padding: 4px 0 0 10px;
+    padding: 5px 0 0 10px;
     line-height: 1.45;
     position: relative;
     color: #7a7a7a;
     text-align: center;
 }
 
-.header .subtitle:before {
-    display: block;
-    content: "\201C";
-    font-size: 40px;
-    position: absolute;
-    left: 182px;
-    top: -18px;
-    color: #7a7a7a;
+@media (min-width: 992px) {
+
+    .header .subtitle:before {
+        display: block;
+        content: "\201C";
+        font-size: 3em;
+        position: absolute;
+        left: 26%;
+        top: -0.4em;
+        color: #7a7a7a;
+    }
 }
 
 .header .about {
@@ -79,7 +117,8 @@ a:hover {
     color: #3e3e3e;
 }
 
-.content .post-section {
+.content .post-section a {
+    color: #3e3e3e;
 }
 
 .content .post-section:after {
@@ -171,31 +210,36 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.content .post p {
-    margin-bottom: 20px;
-}
-
 .content .post ol,
 .content .post ul {
     padding-left: 1em;
 }
 
-.content .talking {
-    margin-bottom: 1em;
-    padding: 1em;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+.think {
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-left: 5px solid #ddd;
+    border-radius: 0.25em;
 }
 
-.content .talking-header {
+.think-content {
 
 }
 
-.content .talking-content {
-
+.think .think-content p {
+    padding: 0.5em 0;
+    margin: 0;
 }
 
-.content .talking-footer {
+.think .think-footer p {
+    padding: 0;
+    margin: 0;
+}
+
+.think-footer {
+    margin-right: 1em;
     text-align: right;
     color: grey;
     font-size: 0.9em;
@@ -208,14 +252,18 @@ a:hover {
     font-size: 14px;
 }
 
+.footer a {
+    color: #3e3e3e;
+}
+
 .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
     color: #333;
-    background: #fdfdf7;
+    background: #f6f8fa;
     border-radius: 3px;
-    border: 1px solid #e7e7d6;
+    border: 1px solid #f6f8fa;
 }
 
 .hljs-comment,

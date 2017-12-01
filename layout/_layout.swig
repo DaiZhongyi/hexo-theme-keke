@@ -38,7 +38,7 @@
       </div>
 
       <div class="navigation">
-        <a href="/">写作</a> / <a href="/reading">阅读</a> / <a href="/talking">思考</a>
+        <a href="/">写作</a> / <a href="/reading">阅读</a> / <a href="/thinking">思考</a>
       </div>
     </header>
   {% endblock %}
