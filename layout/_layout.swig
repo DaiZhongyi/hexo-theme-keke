@@ -51,8 +51,8 @@
     {% endblock %}
   </footer>
 
-  <script src="/js/highlight.pack.js"></script>
-  <script src="/js/busuanzi.pure.mini.js"></script>
+  <script async src="/js/highlight.pack.js"></script>
+  <script async src="/js/busuanzi.pure.mini.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   {# page personal javascript #}
   {% block js %}
