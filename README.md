@@ -60,16 +60,16 @@ I want to create a simple and readable theme.
     truncate: 100
     
     # Google Analytics
-    google_analytics_id: "UA-109699693-1"
+    google_analytics_id: ""
     
     # gitment
-    github_owner: "dzhongyi"
-    github_repo: "zhongyi.io"
-    github_client_id: "61c1e430371b91c5e33c"
-    github_client_secret: "9d397f2d259c2ea9f9ee5617181ad7ce71e12b6f"
+    github_owner: ""
+    github_repo: ""
+    github_client_id: ""
+    github_client_secret: ""
     
     # about
-    linkedin: dzhongyi
+    linkedin: 
  
     theme: keke
     ```
