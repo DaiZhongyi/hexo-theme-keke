@@ -174,7 +174,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     font-size: 0.9em;
 }
 
-.content .post-section .post-date {
+.content .post-section .post-date .post-category {
     padding-top: 10px;
     color: grey;
     font-size: 0.9em;
@@ -206,6 +206,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 .post-meta .post-block .post-category {
     color: grey;
     padding-left: 0.5em;
+    font-size: 0.9em;
 }
 
 .content .post .post-content {
